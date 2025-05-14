@@ -10,3 +10,5 @@
   
   mnth_prods = mnth_prods.concat(cai_packages[0], bookkeeping[0], brand[0]);
   qrt_prods = qrt_prods.concat(cai_packages[1], bookkeeping[1], brand[1]);
+
+console.log("done test");
