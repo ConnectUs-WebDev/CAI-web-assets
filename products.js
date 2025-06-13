@@ -4,7 +4,7 @@
 
   // Products sorted by type
   const cai_packages = [["CAI Platform - Essential", "CAI Platform - Growth", "CAI Platform - Premium"], ["CAI Platform - Essential  (Quarterly)", "CAI Platform - Growth (Quarterly)", "CAI Platform - Premium (Quarterly)"]];
-  const bookkeeping = [["CAI: Essential Bookkeeping", "CAI: Premium Bookkeeping"],["CAI: Essential Bookkeeping (Quarterly)", "CAI: Premium Bookkeeping (Quarterly)"]];
+  const bookkeeping = [["CAI: Bookkeeping - Essential", "CAI: Bookkeeping - Premium"],["CAI: Bookkeeping - Essential (Quarterly)", "CAI: Bookkeeping - Premium (Quarterly)"]];
   const brand = [["CAI: Social Media & Email Marketing - Brand Builder", "CAI: Social Media & Email Marketing - Brand Accelerator"], ["CAI: Social Media & Email Marketing - Brand Builder (Quarterly)", "CAI: Social Media & Email Marketing - Brand Accelerator (Quarterly)"]];
   const bk_setup = ["CAI: Bookkeeping - Basic Setup", "CAI: Bookkeeping - Standard Setup", "CAI: Bookkeeping - Advanced Setup"];
 
