@@ -9,5 +9,5 @@
   const bk_setup = ["CAI: Bookkeeping - Basic Setup", "CAI: Bookkeeping - Standard Setup", "CAI: Bookkeeping - Advanced Setup"];
 
 // Group monthly and quarterly products for labeling
-  mnth_prods = mnth_prods.concat(bookkeeping[0], brand[0]);
-  qrt_prods = qrt_prods.concat(bookkeeping[1], brand[1]);
+  mnth_prods = mnth_prods.concat(cai_packages[0], bookkeeping[0], brand[0]);
+  qrt_prods = qrt_prods.concat(cai_packages[1], bookkeeping[1], brand[1]);
