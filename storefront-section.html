@@ -1,0 +1,123 @@
+   <!-- 
+ 
+STORE SECTION IDEA
+CURRENTLY NOT IN USE 
+
+-->
+   
+   <style>
+        .cai-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Trebuchet MS;
+            gap: 20px; 
+        }
+        
+        .cai-tier {
+            border-radius: 15px;
+            background: #ecedec;
+            height: 450px;
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cai-details {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cai-visual img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .cai-title {
+            color: #111;
+        }
+
+        .cai-description {
+            width: 280px;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #aaa;
+            margin: 20px 0;
+        }
+
+        .cai-label {
+            display: inline-block;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: .7em;
+        }
+
+        .cai-action a {
+            display: inline-block;
+            position: relative;
+            font-size: 11px;
+            color: #111;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #aaa;
+            font-weight: bold;
+            transition: all 0.5s ease;
+        }
+
+        .cai-action a:hover {
+            background: #111;
+            color: #fff;
+        }
+
+        .cai-premium-tier {
+            background: #116a71;
+            color: #fff;
+        }
+    </style>
+
+
+   <div class="cai-wrapper">
+        <div class="cai-tier">
+            <div class="cai-details">
+                <span class="cai-label" style="color: #000;">EXCLUSIVE</span>
+                <h1 class="cai-title">CAI Basic</h1>
+                <p class="cai-description" style="color: #000;">
+                    CAI Basic provides essential AI automation, intelligent data processing, and enhanced decision-making capabilities.
+                </p>
+                <div class="cai-action">
+                    <a href="#">$99</a>
+                    <a href="#">SUBSCRIBE NOW</a>
+                </div>
+            </div>
+            <div class="cai-visual">
+                <img src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67cb6cde693c631e1ee5cbda.jpeg">
+            </div>
+        </div>
+        
+        <div class="cai-tier cai-premium-tier">
+            <div class="cai-details">
+                <span class="cai-label">PREMIUM</span>
+                <h1 class="cai-title">CAI Pro</h1>
+                <p class="cai-description" style="color:#fff;">
+                    CAI Pro offers advanced AI automation, superior analytics, and enhanced scalability for enterprises.
+                </p>
+                <div class="cai-action">
+                    <a href="#">$199</a>
+                    <a href="#">SUBSCRIBE NOW</a>
+                </div>
+            </div>
+            <div class="cai-visual">
+                <img src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67cb6cde693c631e1ee5cbda.jpeg">
+            </div>
+        </div>
+    </div>
