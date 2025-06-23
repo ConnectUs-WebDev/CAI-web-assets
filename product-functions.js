@@ -104,12 +104,12 @@ function markProducts1(count, item_class) {
     if(count["bk_setup"]>1) { prod_types.push("bk-setup") }
     
     let cart = document.getElementsByClassName(item_class);
+
+    for(const product of cart) {
+        product.classList.remove("err");
+    }
     
     if(prod_types.length>0) {
-        for(const product of cart) {
-            product.classList.remove("err");
-        }
-    
         for(const type of prod_types) {
             let cart = document.getElementsByClassName(type);
 
