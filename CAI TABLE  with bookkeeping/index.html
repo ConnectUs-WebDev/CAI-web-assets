@@ -1,0 +1,1812 @@
+<div class="toggle-container" style="margin-bottom: 40px;">
+    <div class="toggle-slider"></div>
+    <div class="toggle-option active" onclick="toggleSwitch(0)">
+        CAI Platform  
+
+    </div>
+    <div class="toggle-option" onclick="toggleSwitch(1)">
+        Social Media  <br> & Email Marketing
+
+    </div>
+    <div class="toggle-option" onclick="toggleSwitch(2)">
+        Bookkeeping
+
+    </div>
+</div>
+
+<div class="table-holder-container" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+
+<div  id="platform-tab" style="display: flex; justify-content: center; align-items: flex-start; gap: 20px; width: 100%;">
+
+<div class="responsive-table-wrapper"> 
+<table id="cai-platform-table" style="margin-bottom: 40px; width: 100%;"  >
+
+
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    <!-- <colgroup></colgroup> -->
+
+    <thead>
+        <tr>
+            <th> 
+                <h1 class="toggle-label-header">Billing Preference</h1>
+                <div id="platform-toggle" class="billing-switch-container" data-group="platform" style="">
+                    <p class="billing-option">Monthly</p>
+                    <label class="billing-toggle">
+                        <input id="billing-checkbox-platform" type="checkbox">
+                        <span class="billing-slider"></span>
+                    </label>
+                    <p class="billing-option">Quarterly</p>
+                 
+                </div>
+                <div class="percent-discount"  >
+                    <p style="  color: #116a71;   padding: 0.5em; font-style: italic; ">Save 10% with quarterly plans</p>
+                </div>
+
+                
+                <p class="warning-note" style="padding: 0;">
+                    All features will be built and managed within CAI.
+                    A recurring platform fee will be added based on your selected package.
+                    <span class="tooltip"  data-tooltip="Sample Computation:&#10;Essential: $3,780 + $57 = $3,837/month&#10;Growth: $6,120 + $257 = $6,377/month&#10;Premium: $9,700 + $257 = $9,957/month"><img style="width: 20px;" src="https://storage.googleapis.com/msgsndr/9XNt6GK8mou8Kn6eIDHW/media/67eefc4d39379a742500eb1d.png" alt=""></span>
+                </p>
+               
+                
+                
+        
+        
+        </th>
+            <th  style="padding: 0.5em 25px 0.5em;" >
+            
+            <div class="platform-header-layout">
+            
+                <h2>ESSENTIAL </h2>
+                <p id="essential-price" class="price-text-value">$3,780<span>/mo</span></p>
+                <p id="save-essential-quarterly" class="save-value-text" > Save $1,134</p>
+                <p class="brand-promo-package" style="background-color: transparent; color: transparent;   -webkit-user-select: none;  -ms-user-select: none;  user-select: none;  ">Most Recommended Package</p>
+                <div class="paragraph-container-text" style="display: flex;flex-direction: column; margin-bottom: 10px; "> 
+                <p class="truncate-multi text">  Basic package.
+                    No advanced integrations.
+                    Basic branding (w/ 1 revision).
+                    Minimal hours for SEO, Copywriting, Strategy, Support.
+                    Build up to 5 webpages.</p>
+            
+            <div class="show-more-container">
+            <button style="border: none  ;
+                background-color:  transparent  ;
+                cursor: pointer  ;
+                color: #116a71  ;"  class="toggleBtn">Show More</button>
+                </div>
+
+                </div>
+
+                </div>
+                <a   class="purchase-button" id="essential-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57cb100a65751dd7e7a10">Purchase</a>
+                </div>
+            </th>
+            <th style="    padding: 0.5em 25px 0.5em;">
+                <div class="platform-header-layout">
+            
+                <h2 style=" " class=".growth-header">GROWTH </h2>
+                <p id="growth-price" class="price-text-value" style="font-size: 20px; ">$6,120/mo</p>
+                         <p id="save-premium-quarterly" class="save-value-text" >Save $1,836</p>
+                <!-- <p class="promo">Most Popular Package!</p> -->
+                <div class="brand-promo-container">
+                <p class="brand-promo-package">Most Recommended Package</p>
+            </div>
+                <div class="paragraph-container-text" style="display: flex;flex-direction: column; margin-bottom: 10px; "> 
+                <p class="truncate-multi text">    More customization and features.
+                    Basic automation (AI chatbot, E-commerce).
+                    In-depth SEO & Branding efforts.
+                    Additional hours for Copywriting, Strategy, Support.
+                    Build up to 10 webpages.</p>
+                <div class="show-more-container">
+                <button style="border: none  ;
+                background-color:  transparent  ;
+                cursor: pointer  ;
+                color: #116a71  ;"  class="toggleBtn">Show More</button>
+                </div>
+                </div>
+                </div>
+                    <a   class="purchase-button" id="growth-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57cf39bc84284ce42265d">Purchase</a>
+            
+            </th>
+            <th  style="padding: 0.5em 25px 0.5em;" >
+                <div class="platform-header-layout">
+                <h2>PREMIUM </h2>
+                <p id="premium-price" class="price-text-value">$9,700/mo</p>
+                  <p id="save-growth-quarterly" class="save-value-text" >Save $2,910</p>
+                <p class="brand-promo-package" style="background-color: transparent; color: transparent;   -webkit-user-select: none;  -ms-user-select: none;  user-select: none;  ">Most Recommended Package</p>
+                <div class="paragraph-container-text" style="display: flex;flex-direction: column; margin-bottom: 10px; "> 
+                <p class="truncate-multi text">Most advanced package.
+                    Full-scale automation.
+                    Includes AI chatbot, E-commerce, and CRM.
+                    Enhanced SEO, Content Strategy, Visual Design, and Analytics.
+                    Comprehensive Support.
+                    Unlimited webpages.</p>
+                <div class="show-more-container"> 
+                    </div>
+                <button style="border: none  ;
+                background-color:  transparent  ;
+                cursor: pointer  ;
+                color: #116a71  ;" class="toggleBtn">Show More</button>
+                </div>
+            </div>
+                <a   class="purchase-button" id="premium-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57d2528f1dcf4cff44bd4">Purchase</a>
+            </th>
+    
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Advanced Funnel & Website Design <span>Custom built, high converting funnels and responsive websites tailored to business needs.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Branding <span>Providing two branding concepts with a final revision for refinement.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Copywriting & Content Strategy <span>Crafting engaging website copy and content strategy.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>SEO Optimization* <span>Improving website ranking through keyword optimization and basic SEO.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Mobile Responsive Design <span>Ensuring the website adapts seamlessly to different screen sizes.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Contact & Booking Forms <span>An interactive online booking system for managing client appointments and scheduling.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Blog/Content Management System (CMS) <span>Setting up a CMS for managing and publishing blog content.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Ecommerce Integration <span>Adding online store functionality for selling products and services.</span></th>
+            <td>&mdash;</td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Custom Animations & High-End Visuals <span>Enhancing website design with advanced animations and visuals.</span></th>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Domain Setup Assistance <span>Helping with domain registration and configuration.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>SSL & Website Security Setup <span>Securing the website with SSL and essential security measures.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Google Business Profile & Analytics Setup <span>Configuring Google Business and analytics tools for insights.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Reputation Management <span>Tools and strategies for monitoring and enhancing a brand's online reputation.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Reporting & Analytics Dashboard <span>Custom dashboard providing insights and performance tracking for marketing campaigns.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Custom CRM Integration <span>Connecting and configuring a CRM to streamline client interactions and sales processes.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Social Media Integration & Automation <span>Linking social media accounts and automating social media posting and engagement strategies.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Lead Capture & Pipeline Automation <span>Automated systems for capturing leads and managing their journey through the sales pipeline.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Membership & Course Platform <span>A platform for hosting and managing memberships, courses, and digital content.</span></th>
+            <td>&mdash;</td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>White-Label Dashboard & Mobile App <span>Custom branded dashboard and mobile app for clients to access their marketing tools.</span></th>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Training & Ongoing Support <span>Providing training and support for website maintenance and use.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Support Level <span>Support services ranging from basic assistance to dedicated account management.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Weekly Strategy Calls & Account Management <span>Scheduled consultations for ongoing strategy refinement and business growth.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>AI Chatbot & Automation Integration* <span>Integration of AI-powered chatbots to automate responses and engage customers 24/7.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr>
+            <th>Call Tracking & Recording* <span>Monitoring and recording of inbound and outbound calls for quality assurance and insights.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ccc;">
+            <th>Missed Call TextBack Automation* <span>Automatic SMS responses to missed calls, ensuring quick customer follow-ups.</span></th>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ccc;">
+        
+        
+            <td style="background-color: #404041; color: #fff; font-style: italic; "  colspan="4" >*Features marked with an asterisk are add-on products and will be invoiced separately. <br>
+                (e.g. phone number, text charges, domain, chatbot, ad spend, SEO, etc.)
+                </td>
+        
+    </tbody>
+    
+    
+</table>
+</div>
+</div>
+
+<!-- End of Platform Table -->
+<div class="responsive-table-wrapper"> 
+<div  id="social-media-tab" style="display: flex; justify-content: center; align-items: center; gap: 40px; width: 100%; flex-direction: column;">
+
+
+
+<div class="sub-menu-category"  >
+
+        <a class="sub-item" style="margin: 0; font-size: 15px; ;  ">Account Setup</a >
+
+        <a id="compare-brand" class="sub-item" style="margin: 0; font-size: 15px;  ">Account Management</a >
+    
+        </div> 
+
+
+        <table id="business-pages-table" class="tablepress tablepress-id-2" style="margin-bottom: 80px;   width: 100%; vertical-align: top;">
+            <thead>
+                <tr class="row-1">
+                    <th class="column-1" style="border: none; color: #000;  ">
+                    
+                        <span id="business-desc" style="font-size: 16px; font-family: 'Trebuchet MS'; color: #404041;"> 
+                            Reach your target audience with <br class="desktop-br"> professionally designed pages.  <br class="desktop-br">
+                            Select a Setup package to get started. <br><br> 
+                        </span>
+
+                  
+                        
+                </th>
+                    <th class="column-2" id="facebook-header"  style="min-width: 210px;">
+                        <h2>FACEBOOK <br> BUSINESS PAGE</h2>
+                        <p id="facebook-price" class="pricing" style="margin:0 auto 10px;">$60</p>
+                        <a class="purchase-button" id="facebook-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57d5546736c6888e5115a">Purchase</a>
+                    </th>
+                    <th class="column-2" style="padding: 15px; min-width: 210px; text-wrap: nowrap;" id="Instagram-header">
+                        <h2 style="font-size: 20px;">INSTAGRAM <br> BUSINESS PAGE</h2>
+                        <p  class="pricing" style="margin:0 auto 10px;">$60</p>
+                        <a class="purchase-button" id="instagram-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57d7d00a6574c967e7b3e">Purchase</a>
+                    </th>
+                    <th class="column-2 " id="LinkedIn-header" style="min-width: 210px;">
+                        <h2 >LINKEDIN <br> BUSINESS PAGE</h2>
+                        <p class="pricing" style="margin:0 auto 10px;">$60</p>
+                        <a class="purchase-button" id="linkedin-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57dab28f1dc797ef44c64">Purchase</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="row-hover">
+                <tr class="row-2">
+                    <th class="column-1" style="text-wrap: nowrap;     padding: 15px 15px"  >Account Creation & Basic Setup</th>
+                    <td class="column-2">Create the business page <br> Verify email &amp; phone no. <br> Set up page roles <br>  </td>
+                    <td class="column-2">Create or convert to <br> a business account <br>Verify email & phone no.</td>
+                    <td class="column-2">Create the company page <br>Verify email <br>Add admin access</td>
+                </tr>
+                <tr class="row-3">
+                    <th class="column-1" style="    padding: 15px 15px">Profile Optimization</th>
+                    <td class="column-2" style="text-wrap: nowrap;">Write an optimized bio <br>Upload profile & cover photo <br>Customize page username & URL</td>
+                    <td class="column-2" style="text-wrap: nowrap;">Write a bio with keywords  & CTA <br>Upload profile picture <br>Add website & contact buttons</td>
+                    <td class="column-2"> Optimize  company bio  <br>Upload profile picture <br>& banner image <br>Add company details</td>
+                </tr>
+                <tr class="row-4">
+                    <th class="column-1" style="text-wrap: nowrap;     padding: 15px 15px">Content & Settings Configuration</th>
+                    <td class="column-2">Add action buttons <br>Adjust privacy <br>& security settings <br>Pin an introductory post <br>Connect to Instagram</td>
+                    <td class="column-2">Link to Facebook page <br>Set up highlights <br>Adjust privacy <br>& security settings</td>
+                    <td class="column-2">Set up featured posts <br>Adjust visibility <br>& security settings <br>Add hashtags for discoverability</td>
+                </tr>
+                <tr class="row-4">
+                    <td class="column-2" colspan="4" style="background-color: #404041; color: #fff; text-wrap: nowrap; font-style: italic; " > 
+                        Browse our <a href="" class="account-management"    id="account-management-shortcut">Account Management</a> for full social media support. <br> 
+                        <strong>Note:</strong> Setup pricing applies per  social media account.   (1 Account = 1 Setup Package)  <br>
+                        For multiple pages,   purchase one Setup package per platform. 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    
+    
+    
+        <table id="brand-package" class="tablepress tablepress-id-1" style="margin-bottom: 80px; justify-content: center;   width: 100%; vertical-align: top;">
+        
+            <thead>
+        
+                <tr class="row-1">
+                    <th class="column-1" style="border: none;">
+                        <h1 class="toggle-label-header">Billing Preference</h1>
+                        <div id="brand-toggle" class="billing-switch-container" data-group="brand">
+                    
+                            <p class="billing-option">Monthly</p>
+                    
+                            <label class="billing-toggle">
+                                <input id="billing-checkbox-brand" type="checkbox">
+                                <span class="billing-slider"></span>
+                            </label>
+                            <p class="billing-option">Quarterly</p>
+                        </div>
+                        <div class="percent-discount"  >
+                            <p style="  color: #116a71;   padding: 0.5em; font-style: italic; ">Save 10% with quarterly plans</p>
+                        </div>
+        
+                        <span style="color: #404041;font-family: 'Trebuchet MS'  ; ">Level up your content and engagement.  <br>
+                            Choose a package to get started.    </span> <span id="disclaimer-social"   class="tooltip" data-tooltip="If you don’t have existing Facebook, Instagram, or LinkedIn pages, browse our Account Setup packages.">
+                                <img style="width: 20px;" src="https://storage.googleapis.com/msgsndr/9XNt6GK8mou8Kn6eIDHW/media/67eefc4d39379a742500eb1d.png" alt="">
+                              </span>
+                              
+                    </th>
+        
+                    <th  class="column-2" id="brand-builder" style="width: 25%;"> 
+                        <h2>Brand Builder</h2>
+                        <p id="brandbuilder-price"  class="pricing" style="margin: 0 auto 0em;">$2,400/mo</p>
+                            <p id="save-brandbuild-quarterly" class="save-value-text" >Save $720</p>
+                        <p style="margin: 0 auto 0em;     font-size: 15px; margin-bottom: 10px;text-wrap: nowrap;">13 Flat Posts/GIF/Video/Email <br>
+                             Facebook, Instagram, LinkedIn <br> Email Marketing</p>
+                        <a class="purchase-button" id="brand-builder-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57de846736c4259e51235">Purchase</a>
+                    </th>
+                    <th class="column-2" id="brand-accelerator" style="padding: 15px; width: 25%;">
+                        <h2 style="font-size: 20px;">Brand Accelerator</h2>
+                        <p id="brandaccelerator-price" class="pricing" style="margin: 0 auto 0em;">$3,600/mo</p>
+                        <p id="save-brandaccel-quarterly" class="save-value-text" >Save $1,080</p>
+                        <p style="margin: 0 auto 0em; font-size: 15px; margin-bottom: 10px;text-wrap: nowrap;">26 Flat Posts/GIF/Video/Email <br>
+                             Facebook, Instagram, LinkedIn <br> Email Marketing</p>
+                        <a class="purchase-button" id="brand-accelerator-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57e1428f1dc39c5f44d26">Purchase</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="row-hover">
+                <tr class="row-2">
+                    <th class="column-1" style="border: transparent;     padding: 15px 15px;   border: 1px solid #ccc;">Content Creation and Management <span>Designing custom posts (static, carousel, branded graphics) <br>
+                        Writing engaging copy with hashtags <br>
+                        Curating & repurposing industry related content        </span></th>
+                    <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                    <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                </tr>
+                <tr class="row-3">
+                    <th class="column-1" style="padding: 15px 15px;">Content Strategy and Planning <span> Content Calendar Creation & Updates <br>
+                        Defining post themes (brand awareness, engagement, promotions) <br>
+                        Scheduling & optimizing posts (best times, formats)</span></th>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                </tr>
+                <tr class="row-4">
+                    <th class="column-1" style="padding: 15px 15px;">Account Management and Optimization <span> Ensuring consistency in brand elements <br>
+                        Updating profile images, banners, and company info as needed <br>
+                        Reviewing platform settings for optimal engagement</span></th>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                </tr>
+                <tr class="row-5">
+                    <th class="column-1" style="padding: 15px 15px;">Community Engagement and Growth <span> Responding to DMs & comments <br>
+                        Engaging with followers & relevant accounts <br>
+                        Initiating and responding to discussions</span></th>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                </tr>
+                <tr class="row-6">
+                    <th class="column-1" style="padding: 15px 15px;">Hashtag and Keyword Research <span> Finding trending and niche hashtags <br>
+                        Optimizing posts for discoverability <br>
+                        Keyword integration for LinkedIn & SEO</span></th>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                </tr>
+                <tr class="row-7">
+                    <th class="column-1" style="padding: 15px 15px;">Analytics and Reporting <span> Reviewing post performance metrics <br>
+                        Analyzing audience behavior & engagement <br>
+                        Creating reports & making improvement recommendations</span></th>
+                    <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                    <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                </tr>
+                <tr class="row-8">
+                    <th class="column-1" style="padding: 15px 15px;">Strategy Calls and Coordination <span>Assign roles and responsibilities <br>
+(content creation, scheduling, engagement, and reporting) <br>
+Review and approve all social media content</span></th>
+                    <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                    <td class="column-2"> <img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                </tr>
+                <tr class="row-8">
+             
+                    <td class="column-2"  style="background-color: #404041; color: #fff; font-style: italic;" colspan="4" > All features will be built and managed within CAI. <br>
+                        A recurring platform fee will be added based on your selected package. <br>
+                        If you're subscribed to CAI Platform, no additional subscription fee will apply. </td>
+                
+
+            
+            </tbody>
+        </table>
+        
+        
+    </div>
+    </div>
+
+
+<!-- End of Social media table -->
+
+
+
+<div class="responsive-table-wrapper">
+    
+<div  id="bookkeepers-tab" style="display: flex; justify-content: center; align-items: center; gap: 20px; width: 100%; flex-direction: column;">
+
+
+
+<div class="sub-menu-category"  >
+
+
+
+            <a id="setup-compare" class="sub-item" style="margin: 0; font-size: 15px; text-wrap: nowrap ">Bookkeeping Setup</a >
+
+    
+    <a id="compare-bookkeeping" class="sub-item" style="margin: 0; font-size: 15px;  ">Bookkeeping Management</a >
+
+</div>
+<div id="header-setup" class="header-setup" style="display: flex; flex-direction: column; text-align: center;   font-family: 'Trebuchet MS'  ;color: #404041; margin-left: auto; margin-right: auto;   ">
+    <h1 id="header-setup-styling" style="font-size: 16px;">  Prepare your system for efficient financial tracking. Select a Setup package to get started.  </h1>
+</div> 
+
+<table id="bookkeeping-table" class="tablepress tablepress-id-2" style="margin-bottom: 80px;   width: 100%; vertical-align: top;">
+    <thead>
+        <tr class="row-1">
+            <th class="column-1" style="border: none; padding: 15px;">
+                <h1 class="toggle-label-header">Billing Preference</h1>
+                <div id="bookkeeping-toggle" class="billing-switch-container" data-group="bookkeeping">
+                    <p class="billing-option">Monthly</p>
+                    <label class="billing-toggle">
+                        <input id="billing-checkbox-bookkeeping" type="checkbox">
+                        <span class="billing-slider"></span>
+                    </label>
+                    <p class="billing-option">Quarterly</p>
+                </div>
+                <div class="percent-discount"  >
+                    <p style="  color: #116a71;   padding: 0.5em; font-style: italic; ">Save 10% with quarterly plans</p>
+                </div>
+
+                <span style="color: #404041; font-family: 'Trebuchet MS', sans-serif;">Keep your finances in check. <br> Choose a Bookkeeping package that fits your needs.</span>
+            </th>
+            <th class="column-2" id="essential-header"  style="width: 25%;">
+                <h2 style="text-wrap:nowrap;">Bookkeeping Essential</h2>
+                <p id="essentialbookkeeping-price" class="pricing" style="margin:0 auto 10px; font-size: 20px;">$1,200/mo</p>
+                <div class="separator">
+  <p id="save-bookessential-quarterly" class="save-value-text" >Save $360</p>
+                </div>
+                
+                <a class="purchase-button" id="essential-bookkeeping-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57ef99bc842d6fe4228d8">Purchase</a>
+            </th>
+            <th class="column-2" style="padding: 15px; width: 25%;" id="premiumbook-header"  >
+                <h2 style="font-size: 20px; text-wrap:nowrap;">Bookkeeping Premium</h2>
+                <p id="premiumbookkeeping-price" class="pricing" style="margin:0 auto 10px; font-size: 20px;">$2,400/mo</p>
+                <div class="separator"> <p id="save-bookpremium-quarterly" class="save-value-text" >Save $720</p></div>
+                  
+                <a class="purchase-button" id="premium-bookkeeping-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57f309bc8421324422919">Purchase</a>
+            </th>
+
+        </tr>
+    </thead>
+     <tbody class="row-hover">
+        <tr class="row-2">
+
+      <th class="column-1" style="padding: 15px 10px;" >Approximate Hours </th>
+            <td class="column-2">Approx. 80 hours per month</td>
+            <td class="column-2">Approx. 160 hours per month</td>
+
+
+
+        </tr>
+        <tr class="row-2">
+            <th class="column-1" style="padding: 15px 10px;" >Payroll <span>Payroll Employee: Manually calculating employee salaries and wages <br>
+                 Email for updates </span></th>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+    
+        </tr>
+        <tr class="row-2"  >
+            <th class="column-1" style="padding: 15px 10px;" >  <span>Payroll with System like Gusto: Utilizing a payroll software like Gusto automates many payroll tasks, such as tax calculations,direct deposit processing, and generating pay stubs. </span></th>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+    
+    
+        </tr>
+        <tr class="row-2"  >
+            <th class="column-1" style="padding: 15px 10px;" >  <span>Recording of Vendor Payments/Expenses: tracking all expenses incurred by the business, such as payments to suppliers,
+                rent, utilities, and other operating costs. This includes proper documentation of each expense for accounting purposes.</span></th>
+                <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+                <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+    
+        </tr>
+        <tr class="row-3"  >
+            <th class="column-1" style="padding: 15px 10px;">Invoices <span>Drafting Invoices for Approval: Creating invoices for services rendered or goods delivered to clients. These invoices are typically reviewed and approved by the client before being sent out.</span></th>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+        <tr class="row-3"  >
+            <th class="column-1" style="padding: 15px 10px;"><span>Sending Out Invoices: Distributing invoices to clients via Email and QuickBooks Online.</span></th>
+            <td class="column-2" ><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+        <tr class="row-4"  >
+            <th class="column-1" style="padding: 15px 10px;">Reconciliation <span>The process of comparing and reconciling bank statements with the company's internal accounting records. This involves identifying and investigating any discrepancies between the two.
+
+                Ensures the accuracy of bank balances and helps to prevent fraud.</span></th>
+            <td class="column-2">-</td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+
+        <tr class="row-4"  >
+            <th class="column-1" style="padding: 15px 10px;"><span>Reconcile expenses & payments of Vendors on QuickBooks</span></th>
+            <td class="column-2">-</td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+        </tr>
+
+        <tr class="row-4"  >
+            <th class="column-1" style="padding: 15px 10px;"><span>Verify if the ending cash balance on the bank reconciliation statement matches the cash balance reported on the company's balance sheet. This ensures consistency and accuracy in financial reporting.</span></th>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+        <tr class="row-5"  >
+            <th class="column-1" style="padding: 15px 10px;">Financial Reports <span>P&L (Profit & Loss) Report: Shows a company's revenues and expenses over a specific period, such as a month or year. It provides insights into the company's profitability and overall financial performance.</span></th>
+            <td class="column-2">-</td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+        <tr class="row-5">
+            <th class="column-1" style="padding: 15px 10px;"><span>Balance Sheet: A snapshot of a company's financial position at a specific point in time. It shows a company's
+                assets, liabilities, and equity.</span></th>
+            <td class="column-2">-</td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+        <tr class="row-6">
+            <th class="column-1" style="padding: 15px 10px;">Strategic Calls <span>The weekly meeting covers follow-ups on unanswered emails, reporting previous payrolls, and reviewing invoices for approval. Additionally, discussions on aging reports and addressing any other outstanding inquiries are conducted.</span></th>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+        <tr class="row-6">
+            <th class="column-1" style="padding: 15px 10px;"><span>Preparation of the agenda, necessary reports, and taking minute notes</span></th>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+        <tr class="row-7">
+            <th class="column-1" style="padding: 15px 10px;">Processing of 1099 <span>Issuing 1099 forms involves gathering necessary information from collectors, including having them complete a W-9 form to provide their taxpayer identification details. Once the W-9 is received, we prepare and file the 1099 form with the IRS and provides a copy to the payee by the required deadlines.</span></th>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+            <td class="column-2"><img class="checkmark-cai" src="https://storage.googleapis.com/msgsndr/UxH6fQco7H5ncuXjTNnM/media/67e2e9a73f38fa71dbf12f5c.png" alt=""></td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+
+<table id="setup-package" class="tablepress tablepress-id-1" style="margin-bottom: 80px; justify-content: center; width: 100%; vertical-align: top;">
+
+
+    <thead>
+        <tr class="row-1">
+        
+            <th class="column-2" id="basic-setup"> 
+                <h2>Basic </h2>
+                <p id="basicsetup-price" class="pricing" style="margin: 0 auto 0em; margin-bottom: 10px;">$120</p>
+                <a class="purchase-button" id="basic-setup-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57e3f00a65791787e7c58">Purchase</a>
+            </th>
+            <th class="column-2" id="standard-setup" style="padding: 15px;">
+                <h2 style="font-size: 20px;">Standard  </h2>
+                <p id="standardsetup-price" class="pricing" style="margin: 0 auto 0em; margin-bottom: 10px;">$240</p>
+                <a class="purchase-button" id="standard-setup-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57e7c3e61f106293fa5c2">Purchase</a>
+            </th>
+            <th class="column-2" id="advanced-setup" style="padding: 15px;">
+                <h2 style="font-size: 20px;">Advanced  </h2>
+                <p id="advancedsetup-price" class="pricing" style="margin: 0 auto 0em; margin-bottom: 10px;">$480</p>
+                <a class="purchase-button" id="advanced-setup-button" href="https://cai-packages.connectus-marketing.com/product-details/product/67e57eab3e61f1ac0c3fa5cd">Purchase</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row-2" style="font-size: 15px;" >
+             
+            <td class="column-2">Simple Setup, Single Account  <br>
+Company Profile Creation <br>
+Basic Chart of Accounts <br>
+Bank Feeds </td>
+            <td class="column-2">Multiple Accounts <br>
+Moderate Customization <br>
+Industry-Specific Chart of Accounts <br>
+Tax Settings, Bank Feeds, Initial Training</td>
+
+            <td class="column-2"> Multiple Accounts <br>
+Custom Workflows, System Integrations <br>
+Industry-Specific Chart of Accounts <br>
+Tax Settings, Bank Feeds, Training <br>
+Multi-Currency, Historical Data Import 
+</td>
+        </tr>
+
+        <tr class="row-2"> 
+            
+            <td class="column-2" colspan="3" style="background-color: #404041; color: #fff; font-style: italic">
+
+                Explore our  <a href="#" class="bookkeeping-shortcut-tag"   id="bookkeeping-shortcut"> Bookkeeping  Management   </a> packages for support with <br> recording transactions, managing accounts, reconciling bank statements, and updating ledgers.  </tr>
+
+            </td>
+    </tbody>
+</table>
+
+
+</div>
+
+<!-- <div class="bottom-setup" id="bottom-setup"  > Explore our  <a href="" class="bookkeeping-shortcut-tag" style="text-decoration:  none; display: contents; color: #116a71;" id="bookkeeping-shortcut"> Bookkeeping packages  </a> to get more assistance with <br> recording transactions, managing accounts, reconciling bank statements, and updating ledgers. -->
+</div>
+
+
+
+
+<style>
+/* body { background: #fff; font: 400 1em/1.4 "Open Sans", "Helvetica Neue", sans-serif; color: #333; text-align: center; padding: 4em 2em; } */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.toggle-container {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 100%; /* Fluid width */
+    max-width: 600px;
+
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Trebuchet MS', sans-serif;
+                                            
+}
+
+.toggle-option {
+    font-size: 15px;
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+
+
+
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.toggle-option span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 100%;
+    background:#116a71;
+    border-radius: 50px;
+    transition: left 0.3s;
+    z-index: 0;
+}
+
+.toggle-option.active {
+    color: white;
+}
+
+.toggle-option.active span {
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+h1 { font-weight: 300;  line-height: 1.35; margin: 0 0 .125em; }
+h1 + p {  color: #999; max-width: 30em; margin: 0 auto 3em; } 
+
+table { width: 85%; text-align: left; border-spacing: 0; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;   font-family: "Poppins", sans-serif;}
+
+td { font-family: inherit; font-size: .875em; line-height: 1.45; color: #444; vertical-align: baseline; padding: 1em; }
+th { font-weight: 600; vertical-align: middle;  padding: 1em;  }
+
+colgroup:nth-child(1) { width: 40%; border: 0 none; } /* Feature Column */
+colgroup:nth-child(2),
+colgroup:nth-child(3),
+colgroup:nth-child(4),
+colgroup:nth-child(5) { width: 15%; border: 1px solid #ccc; } /* All Pricing Columns */
+
+
+/* Tablehead */
+
+thead th { background: #def4fe; background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 100%); background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%); text-align: center; position: relative; border-bottom: 1px solid #ccc; padding: 3em 25px 2em; font-weight: 400; color: #999; }
+thead th:nth-child(1) { background: transparent;  }
+thead th:nth-child(3) {  padding: 2em 0 5em; }
+thead th h2 ,.growth-header { font-weight: 700; font-size: 20px; line-height: 1.2; color: #116a71; text-transform: uppercase; }
+thead th h2 + p { font-size: 1.25em; line-height: 1.4; }
+/* thead th:nth-child(3) h2 { font-size: 28px; }
+thead th:nth-child(3) h2 + p { font-size: 1.5em; } */
+
+thead th p.promo { font-size: 1em; color: #fff; position: absolute; top: 7em; left: 0px; z-index: 1000; width: 100%; margin: 0; padding: .625em 17px .75em; background: #116a71; box-shadow: 0 2px 4px rgba(0,0,0,.25); border-bottom: 1px solid #116a71; }
+
+thead th p.promo:before { content: ""; position: absolute; display: block; width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 0; border-color: transparent #116a71 transparent transparent; bottom: -7px; left: 0; }
+thead th p.promo:after { content: ""; position: absolute; display: block; width: 0px; height: 0px; border-style: solid; border-width: 7px 7px 0 0; border-color: #116a71 transparent transparent transparent; bottom: -7px; right: 0; }
+
+/* Tablebody */
+
+tbody th { background: #fff; border-left: 1px solid #ccc; color: #404041;}
+tbody th span { font-weight: normal; font-size: 87.5%; color: #999; display: block; }
+
+tbody td { background: #fff; text-align: center; }
+
+tbody tr:nth-child(even) th,
+tbody tr:nth-child(even) td { background: #f5f5f5; border: 1px solid #ccc; border-width: 1px 0 1px 1px; }
+/* tbody tr:last-child td { border-bottom: 0 none; } */
+
+/* Tablefooter */
+
+tfoot th  { padding: 2em 1em; border-top: 1px solid #ccc; }
+tfoot td  { text-align: center; padding: 2em 1em; border-top: 1px solid #ccc; }
+
+tfoot a  { font-weight: bold; color: #fff; text-decoration: none; text-transform: uppercase; display: block; padding: 1.125em 2em; background: #116a71; border-radius: .5em; }
+
+
+
+.column-2{
+
+vertical-align: middle;
+}
+
+
+td {
+vertical-align: middle;
+}
+
+
+
+
+
+/* Table Styling */
+.tablepress {
+width: 85%;
+border-collapse: collapse;
+text-align: left;
+}
+
+.tablepress th,
+.tablepress td {
+padding: 15px 5px;
+border: 1px solid #ddd;
+}
+
+.tablepress thead th {
+/* background-color: #def4fe;
+text-align: center; */
+
+
+}
+
+.pricing {
+font-size: 1.5em;
+font-weight: bold;
+color: #116a71;
+}
+
+/* Nested Tables */
+.nested-table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.nested-table th,
+.nested-table td {
+padding: 10px;
+border: 1px solid #ccc;
+text-align: center;
+}
+
+/* Purchase Button */
+
+.purchase-button {
+display: inline-block;
+padding: 5px 10px;
+background: #116a71;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+
+tbody tr:nth-child(even) td {
+
+border: 1px solid #ddd;
+}
+
+
+
+
+.price-text-value {
+
+font-weight: 700;
+color: #116a71;
+}
+
+
+/* new css */
+
+.purchase-button-container{
+display: flex;
+flex-direction: column;
+justify-content:end;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.sub-menu-category{
+font-family: "Poppins", sans-serif;
+background-color: #f5f5f5;
+border-radius: 10px;
+padding: 1%;
+display: flex; flex-direction: row; gap: 15px;  cursor: default; text-align: center; justify-content: center;
+}
+
+
+.sub-item{
+cursor: pointer;
+transition: color 0.2s, transform 0.2s;
+text-align: center;
+color: #116a71;
+padding: 15px;
+
+}
+
+.sub-item:hover{
+background-color: #116a71;
+border-radius: 10px;
+color: #fff;
+}
+
+
+
+th{
+vertical-align: middle;
+}
+
+
+.sub-item.active {
+border-radius: 10px;
+background-color: #116a71;
+color: white;
+}
+
+
+.billing-switch-container{
+display: flex;
+justify-content: center;
+}
+
+
+#billing-switch-container {
+display: flex;
+justify-content: center;
+}
+.billing-option {
+    font-family: 'Trebuchet MS', sans-serif  ;
+color: #000;
+margin-top: auto;
+margin-bottom: auto;
+}
+
+/* From Uiverse.io by TimTrayler */ 
+.billing-toggle {
+--secondary-bg: #116a71;
+--primary-highlight: #fff;
+font-size: 17px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 3.7em;
+height: 1.8em;
+position: relative;
+margin: auto 10px;
+}
+
+.billing-toggle input {
+display: none;
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.billing-slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #116a71;
+transition: .2s;
+border-radius: 30px;
+}
+
+.billing-slider:before {
+position: absolute;
+content: "";
+height: 1.4em;
+width: 1.4em;
+border-radius: 20px;
+left: 0.2em;
+bottom: 0.2em;
+background-color: #fff;
+transition: .4s;
+}
+
+input:checked + .billing-slider::before {
+background-color: var(--primary-highlight);
+}
+
+input:checked + .billing-slider {
+background-color: var(--secondary-bg);
+}
+
+input:focus + .billing-slider {
+box-shadow: 0 0 1px var(--secondary-bg);
+}
+
+input:checked + .billing-slider:before {
+transform: translateX(1.9em);
+}
+
+
+
+
+
+.truncate-multi {
+    font-size: 14px;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+
+
+transition: max-height 0.3s ease-in-out;
+}
+
+
+
+.expanded {
+-webkit-line-clamp: unset; 
+overflow: visible;
+}
+
+
+
+.togglebtn{
+    font-size: 12px !important;
+    border: none !important;
+    background-color:  transparent !important;
+    cursor: pointer !important;
+    color: #116a71 !important;
+}
+
+
+
+.show-more-container{
+
+display: flex;
+justify-content: center;
+}
+
+
+.warning-note{
+    font-family: 'Trebuchet MS', sans-serif  ;
+    color:#404041;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+
+
+.checkmark-cai{
+    height: 30px;
+}
+
+
+.platform-header-layout{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+.brand-promo-package{
+
+
+    padding: 10px;
+
+    max-width: 800px; 
+    text-wrap: nowrap;
+    background: #404041;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -25px;  
+    margin-right: -25px;
+}
+
+.sub-header-menu{
+    font-size: 15px;
+}
+
+
+
+
+
+/* @media (max-width: 768px) {
+.table-container {
+    width: 100vw;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-holder-container{
+    transform: scale(0.5);
+}
+
+table {
+    width: 100vw;
+    min-width: 550px; 
+}
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+
+.sub-header-menu  {
+    font-size: 15px !important;
+
+} */
+
+#basic-setup,
+#standard-setup,
+#advanced-setup{
+    min-width: 300px;
+}
+
+
+.responsive-table-wrapper {
+    width: 100%;
+    
+    -webkit-overflow-scrolling: touch;
+}
+
+.responsive-table-wrapper table {
+    width: 50%;
+    min-width: 800px;
+}
+
+
+.toggle-label-header{
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .tablepress th,
+    .tablepress td {
+    font-size: 12px;
+    padding: 10px;
+    }
+@media (max-width: 768px) {
+    .responsive-table-wrapper {
+        overflow-x: auto;
+    }
+}
+
+
+    #platform-tab, #social-media-tab, #bookkeepers-tab{
+        flex-direction: column !important;
+    }
+
+    .sub-menu-category{
+        flex-direction: row;
+    }
+}
+
+
+.tooltip {
+position: relative;
+cursor: pointer;
+border-radius: 30px;
+
+}
+
+.tooltip::after {
+content: attr(data-tooltip);
+position: absolute;
+bottom: 125%;
+left: -120px;
+width: 350px;
+height: auto;
+transform: translateX(-50%);
+background-color: rgba(17, 106, 113, 0.9);
+
+color: white;
+padding: 5px;
+border-radius: 3px;
+visibility: hidden;
+opacity: 0;
+transition: opacity 0.3s ease;
+white-space: nowrap;
+display: flex; /* Enables Flexbox */
+flex-direction: column; /* Arranges content vertically */
+align-items: center; /* Aligns content horizontally in the center */
+justify-content: center; /* Centers content vertically within the tooltip */
+text-align: center; /* Ensures text inside the tooltip is centered */
+}
+
+.tooltip:hover::after {
+white-space: pre-wrap;
+visibility: visible;
+opacity: 1;
+}
+
+
+.account-management{
+text-decoration: underline;
+color: #fff;
+}
+
+.bookkeeping-shortcut-tag{
+display: inline-block;
+text-decoration: underline;
+color: #fff;
+}
+
+.account-management:hover{
+color: #116a71;
+
+}
+
+
+.bookkeeping-shortcut-tag:hover{
+text-decoration: underline;
+color: #116a71;
+
+}
+
+
+.bottom-setup{
+display: flex  ;
+justify-content: center  ;
+align-items: center  ;
+text-align: center  ;
+font-family: 'Trebuchet MS',   sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+	.desktop-br { display: none; }
+  
+    #business-desc{
+        /* text-wrap:nowrap; */
+    }
+
+    #header-setup-styling{
+position: absolute;
+left: 150px;
+    top: 100px;
+ 
+}
+
+.toggle-option {
+    font-size: 12px;
+    padding: 5px;
+}
+
+}
+
+@media (max-width: 768px) {
+	.desktop-br { display: none; }
+  
+
+#header-setup-styling{
+    top: 80px;
+    left: 5px;
+}
+   
+}
+
+
+.column-1{
+
+    color: #404041;
+}
+
+
+/* 
+#disclaimer-social{
+    font-size: 14px; padding: 0.5em; width: 400px;
+} */
+
+
+#disclaimer-social::after{
+    font-size: 14px; padding: 0.5em; width: 400px;
+}
+
+
+
+.save-value-text{
+    color: #116a71;
+    font-style: italic;
+    font-size: 16px;
+}
+
+</style>
+
+
+
+<script>
+
+ 
+// Utility to get URL query params
+function getQueryParams() {
+    const params = {};
+    window.location.search.substring(1).split("&").forEach(pair => {
+        const [key, value] = pair.split("=");
+        if (key) params[key] = decodeURIComponent(value || "");
+    });
+    return params;
+}
+
+// Set sessionStorage values from URL
+(function () {
+    const params = getQueryParams();
+    if (params.tab) {
+        let tabIndex = 0;
+        if (params.tab === "social") tabIndex = 1;
+        else if (params.tab === "book") tabIndex = 2;
+
+        sessionStorage.setItem("activeTabIndex", tabIndex.toString());
+    }
+
+    if (params.submenu === "ac-management") {
+        sessionStorage.setItem("activateTab", "account-management-social");
+    } else if (params.submenu === "ac-setup") {
+        sessionStorage.setItem("activateTab", "account-setup-social");
+    } else if (params.submenu === "book-management") {
+        sessionStorage.setItem("activateTab", "bookkeeping-management");
+    } else if (params.submenu === "book-setup") {
+        sessionStorage.setItem("activateTab", "bookkeeping-setup");
+    }
+})();
+
+ 
+window.addEventListener("pageshow", function () {
+    const sections = [
+        document.getElementById("platform-tab"),
+        document.getElementById("social-media-tab"),
+        document.getElementById("bookkeepers-tab")
+    ];
+
+    sections.forEach(section => {
+        if (section) {
+            section.style.position = "absolute";
+            section.style.opacity = "0";
+            section.style.visibility = "hidden";
+        }
+    });
+
+    const sessionTab = sessionStorage.getItem("activateTab");
+    const shouldLoadSocial = sessionTab === "account-management-social" || sessionTab === "account-setup-social";
+    const shouldLoadBookkeeping = sessionTab === "bookkeeping-management" || sessionTab === "bookkeeping-setup";
+    const savedIndex = sessionStorage.getItem("activeTabIndex");
+    const indexToLoad = shouldLoadSocial ? 1 : shouldLoadBookkeeping ? 2 : (savedIndex !== null ? parseInt(savedIndex) : 0);
+
+    toggleSwitch(indexToLoad);
+
+    // Handle sub-tab clicks
+    setTimeout(() => {
+        if (sessionTab === "account-management-social") {
+            document.getElementById("compare-brand")?.classList.add("active");
+            document.getElementById("compare-brand")?.click();
+        }
+
+        if (sessionTab === "account-setup-social") {
+            const setup = document.querySelector("#social-media-tab .sub-item");
+            setup?.classList.add("active");
+            setup?.click();
+        }
+
+        if (sessionTab === "bookkeeping-management") {
+            document.getElementById("compare-bookkeeping")?.classList.add("active");
+            document.getElementById("compare-bookkeeping")?.click();
+        }
+
+        if (sessionTab === "bookkeeping-setup") {
+            document.getElementById("setup-compare")?.classList.add("active");
+            document.getElementById("setup-compare")?.click();
+        }
+
+        sessionStorage.removeItem("activateTab");
+    }, 150);
+});
+
+// Reset visual state and hide all packages
+function resetState() {
+    document.querySelectorAll("input, textarea").forEach(input => input.value = "");
+    document.querySelectorAll(".sub-item").forEach(item => item.classList.remove("active"));
+
+    document.getElementById("business-pages-table")?.style.setProperty("display", "none");
+    document.getElementById("brand-package")?.style.setProperty("display", "none");
+    document.getElementById("bookkeeping-table")?.style.setProperty("display", "none");
+    document.getElementById("setup-package")?.style.setProperty("display", "none");
+}
+
+// Main toggle switch logic
+function toggleSwitch(index) {
+    resetState();
+    sessionStorage.setItem("activeTabIndex", index);
+
+    const slider = document.querySelector(".toggle-slider");
+    const options = document.querySelectorAll(".toggle-option");
+    const sections = [
+        document.getElementById("platform-tab"),
+        document.getElementById("social-media-tab"),
+        document.getElementById("bookkeepers-tab")
+    ];
+
+    options.forEach(option => option.classList.remove("active"));
+    sections.forEach(section => {
+        if (section) {
+            section.style.position = "absolute";
+            section.style.opacity = "0";
+            section.style.visibility = "hidden";
+        }
+    });
+
+    if (index !== null && sections[index]) {
+        options[index].classList.add("active");
+        const activeSection = sections[index];
+        activeSection.style.position = "relative";
+        activeSection.style.opacity = "1";
+        activeSection.style.visibility = "visible";
+
+        slider.style.left = `${(index * 100) / 3}%`;
+
+        const firstSubItem = activeSection.querySelector(".sub-item");
+        if (firstSubItem) {
+            firstSubItem.classList.add("active");
+            firstSubItem.click();
+        }
+    } else {
+        slider.style.left = "-100%";
+    }
+}
+
+// Toggle Code
+document.addEventListener("DOMContentLoaded", function () {
+    const pricingData = {
+        "platform": {
+            "essential-price": { 
+                monthly: "$3,780<span>/mo</span>",
+                quarterly: "$10,206<span>/qtr</span>",
+                buttonId: "essential-button",
+                links: {
+                    monthly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57cb100a65751dd7e7a10",
+                    quarterly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57fac28f1dcca14f44efa"
+                }
+            },
+            "growth-price": { 
+                monthly: "$6,120<span>/mo</span>",
+                quarterly: "$16,524<span>/qtr</span>",
+                buttonId: "growth-button",
+                links: {
+                    monthly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57cf39bc84284ce42265d",
+                    quarterly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57ffb3e61f19d0a3fa726"
+                }
+            },
+            "premium-price": { 
+                monthly: "$9,700<span>/mo</span>",
+                quarterly: "$26,190<span>/qtr</span>",
+                buttonId: "premium-button",
+                links: {
+                    monthly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57d2528f1dcf4cff44bd4",
+                    quarterly: "https://cai-packages.connectus-marketing.com/product-details/product/67e5806200a6574f057e7e31"
+                }
+            }
+        },
+        "brand": {
+            "brandbuilder-price": { 
+                monthly: "$2,400<span>/mo</span>",
+                quarterly: "$6,480<span>/qtr</span>",
+                buttonId: "brand-builder-button",
+                links: {
+                    monthly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57de846736c4259e51235",
+                    quarterly: "https://cai-packages.connectus-marketing.com/product-details/product/67e580c300a65735117e7e69"
+                }
+            },
+            "brandaccelerator-price": { 
+                monthly: "$3,600<span>/mo</span>",
+                quarterly: "$9,720<span>/qtr</span>",
+                buttonId: "brand-accelerator-button",
+                links: {
+                    monthly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57e1428f1dc39c5f44d26",
+                    quarterly: "https://cai-packages.connectus-marketing.com/product-details/product/67e581333e61f10c4c3fa82d"
+                }
+            }
+        },
+        "bookkeeping": {
+            "essentialbookkeeping-price": { 
+                monthly: "$1,200<span>/mo</span>",
+                quarterly: "$3,240<span>/qtr</span>",
+                buttonId: "essential-bookkeeping-button",
+                links: {
+                    monthly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57ef99bc842d6fe4228d8",
+                    quarterly: "https://cai-packages.connectus-marketing.com/product-details/product/67e5823d46736ca6f8e516df"
+                }
+            },
+            "premiumbookkeeping-price": { 
+                monthly: "$2,400<span>/mo</span>",
+                quarterly: "$6,480<span>/qtr</span>",
+                buttonId: "premium-bookkeeping-button",
+                links: {
+                    monthly: "https://cai-packages.connectus-marketing.com/product-details/product/67e57f309bc8421324422919",
+                    quarterly: "https://cai-packages.connectus-marketing.com/product-details/product/67e5828b46736c7aa1e51723"
+                }
+            }
+        },
+    };
+
+
+        // Map save messages to their groups
+    const saveQuarterlyMap = {
+        platform: [
+            "save-essential-quarterly",
+            "save-growth-quarterly",
+            "save-premium-quarterly"
+        ],
+        brand: [
+            "save-brandbuild-quarterly",
+            "save-brandaccel-quarterly"
+        ],
+        bookkeeping: [
+            "save-bookessential-quarterly",
+            "save-bookpremium-quarterly"
+        ]
+    };
+
+function toggleBillingPlan(event) {
+    const toggle = event.target;
+    const group = toggle.closest(".billing-switch-container").dataset.group;
+    const isChecked = toggle.checked;
+
+    if (pricingData[group]) {
+        Object.keys(pricingData[group]).forEach(priceId => {
+            let priceElement = document.querySelector(`#${priceId}`);
+            let buttonElement = document.querySelector(`#${pricingData[group][priceId].buttonId}`);
+            if (priceElement) {
+                priceElement.innerHTML = isChecked ? pricingData[group][priceId].quarterly : pricingData[group][priceId].monthly;
+            }
+            if (buttonElement) {
+                buttonElement.href = isChecked ? pricingData[group][priceId].links.quarterly : pricingData[group][priceId].links.monthly;
+            }
+        });
+    }
+
+    // ✅ Show/hide save messages for the group
+    if (saveQuarterlyMap[group]) {
+        saveQuarterlyMap[group].forEach(saveId => {
+            const el = document.getElementById(saveId);
+            if (el) {
+                el.style.display = isChecked ? "inline-block" : "none";
+            }
+        });
+    }
+}
+
+
+    document.querySelectorAll("input[type='checkbox']").forEach(toggle => {
+    toggle.addEventListener("change", toggleBillingPlan);
+
+    // ✅ Apply initial state on page load
+    toggleBillingPlan({ target: toggle });
+});
+});
+
+
+//Social Media Tab
+document.addEventListener("DOMContentLoaded", function () {
+    const subItems = document.querySelectorAll(".sub-item");
+    const businessTable = document.getElementById("business-pages-table");
+    const brandTable = document.getElementById("brand-package");
+    const compareBrand = document.getElementById("compare-brand");
+    const accountShortcut = document.getElementById("account-management-shortcut");
+
+    function setActiveTab(selectedTab) {
+    if (!selectedTab) return;
+    subItems.forEach(item => item.classList.remove("active"));
+    selectedTab.classList.add("active");
+
+    const selectedText = selectedTab.textContent.trim();
+    businessTable.style.display = "none";
+    brandTable.style.display = "none";
+
+    // 🔄 Update the hash based on the selected tab
+    if (selectedTab.id === "compare-brand") {
+        // window.location.hash = "tab=compare";
+    } else {
+        window.location.hash = ""; // Clear it if not compare
+    }
+
+    if (selectedText === "Account Setup") {
+        businessTable.style.display = "table";
+        return;
+    }
+
+    if (selectedText === "Account Management" || selectedTab.id === "compare-brand") {
+        brandTable.style.display = "table";
+        return;
+    }
+}
+
+    // Add delay to allow GHL DOM to finish rendering
+    setTimeout(() => {
+        const hash = window.location.hash;
+        if (hash === "#tab=compare") {
+            setActiveTab(compareBrand);
+            compareBrand?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            const defaultTab = document.querySelector(".sub-item");
+            if (defaultTab) setActiveTab(defaultTab);
+        }
+    }, 100);
+
+    subItems.forEach(item => {
+        item.addEventListener("click", function () {
+            setActiveTab(this);
+        });
+    });
+
+    compareBrand?.addEventListener("click", function () {
+        setActiveTab(this);
+    });
+
+    accountShortcut?.addEventListener("click", function (event) {
+        event.preventDefault();
+        setActiveTab(compareBrand);
+    });
+});
+
+
+//Bookkeeping Tab 
+document.addEventListener("DOMContentLoaded", function () {
+const navItems = document.querySelectorAll(".sub-item");
+const setupTable = document.getElementById("setup-package");
+const bookkeepingTable = document.getElementById("bookkeeping-table");
+const compareSetup = document.getElementById("setup-compare");
+const compareBookkeeping = document.getElementById("compare-bookkeeping");
+const headerSetup = document.getElementById("header-setup");
+const bottomSetup = document.getElementById("bottom-setup");
+const bookkeepingShortcut = document.getElementById("bookkeeping-shortcut");
+
+const platformTab = document.getElementById("platform-tab");
+const socialMediaTab = document.getElementById("social-media-tab");
+
+// Function to hide both header-setup and bottom-setup
+function hideSetupElements() {
+    if (headerSetup) headerSetup.style.display = "none";
+    if (bottomSetup) bottomSetup.style.display = "none";
+}
+
+// Function to show both header-setup and bottom-setup
+function showSetupElements() {
+    if (headerSetup) headerSetup.style.display = "block";
+    if (bottomSetup) bottomSetup.style.display = "block";
+}
+
+// Hide elements initially
+hideSetupElements();
+
+function updateActiveSelection(clickedItem) {
+    // Update selection UI
+    navItems.forEach(item => item.classList.remove("selected"));
+    clickedItem.classList.add("selected");
+
+    const selectedText = clickedItem.textContent.trim();
+
+    if (setupTable) setupTable.style.display = "none";
+    if (bookkeepingTable) bookkeepingTable.style.display = "none";
+
+    // Show the correct table based on selection
+    if (selectedText === "Bookkeeping Setup" && setupTable) {
+        setupTable.style.display = "table";
+    } else if (selectedText === "Bookkeeping Management" && bookkeepingTable) {
+        bookkeepingTable.style.display = "table";
+    }
+
+    // Show or hide setup elements based on clicked item
+    if (clickedItem.id === "setup-compare") {
+        showSetupElements(); // Show both header and bottom
+    } else {
+        // Always hide setup elements unless setup-compare is selected
+        hideSetupElements();
+    }
+}
+
+// Menu item listeners
+navItems.forEach(item => {
+    item.addEventListener("click", function () {
+        updateActiveSelection(this);
+    });
+});
+
+// Compare tab listeners
+if (compareSetup) {
+    compareSetup.addEventListener("click", function () {
+        updateActiveSelection(this);
+    });
+}
+
+if (compareBookkeeping) {
+    compareBookkeeping.addEventListener("click", function () {
+        updateActiveSelection(this);
+    });
+}
+
+// Shortcut listener
+if (bookkeepingShortcut) {
+    bookkeepingShortcut.addEventListener("click", function (e) {
+        e.preventDefault();
+        updateActiveSelection(compareBookkeeping);
+    });
+}
+
+// Additional tab listeners
+if (platformTab) {
+    platformTab.addEventListener("click", function () {
+        updateActiveSelection(this);
+    });
+}
+
+if (socialMediaTab) {
+    socialMediaTab.addEventListener("click", function () {
+        updateActiveSelection(this);
+    });
+}
+
+// Load default tab
+const defaultTab = document.querySelector(".sub-item");
+if (defaultTab) {
+    updateActiveSelection(defaultTab);
+}
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".toggleBtn");
+
+    buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const th = button.closest("th"); // Find the closest <th> ancestor
+        const text = th.querySelector(".text"); // Find the related <p> text
+        const promo = th.querySelector(".promo"); // Find the related <p class="promo">
+
+        text.classList.toggle("expanded");
+        button.textContent = text.classList.contains("expanded") ? "Show Less" : "Show More";
+
+        // Hide the promo when "Show More" is clicked, show when "Show Less" is clicked
+        if (promo) {
+        promo.style.display = text.classList.contains("expanded") ? "none" : "block";
+        }
+    });
+    });
+});
+
+
+</script>
