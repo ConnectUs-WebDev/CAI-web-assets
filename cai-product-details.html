@@ -10,11 +10,44 @@
   </script>
   
   <script>
+    
+  document.addEventListener("DOMContentLoaded", function () {
+    let is_mnth = false;
+    let is_qrt = false;
+    let product = document.getElementsByClassName("hl-product-detail-product-name");
+    let price = document.getElementsByClassName("hl-product-detail-product-price");
+
+    if (product.length && price.length) {
+      let product_name = product[0].getAttribute("title");
+      let is_cai_platform = cai_packages[0].includes(product_name) || cai_packages[1].includes(product_name);
+
+      if (mnth_prods.includes(product_name) && !is_cai_platform) {
+        price[0].classList.add("mnth");
+      } else if (qrt_prods.includes(product_name) && !is_cai_platform) {
+        price[0].classList.add("qrt");
+      }
+
+      let description = document.getElementById("description");
+      let show_btn = document.getElementsByClassName("show-more")[0];
+
+      if (description) {
+        let is_overflown = description.scrollHeight > 350;
+
+    //    if (socmed_accs.includes(product_name)) {
+    //      description.classList.remove("description");
+     //     description.classList.add("description-full");
+      //  }
+
+        if (!is_overflown && show_btn) {
+          show_btn.classList.add("hide");
+        }
+      }
+    }
+  });
+  
     let checkout_btn = document.getElementsByClassName("hl-checkout-btn")[0];
     let drawer = document.getElementsByClassName("drawer__content")[0];
     
-    // Checks quantity of products in cart drawer. 
-    // Shows error for products that don't allow multiple purchases.
     function checkQuantity() {
       let has_monthly = false;
       let has_quarterly = false;
@@ -40,10 +73,14 @@
         let quantity_container = product.getElementsByClassName("hl-cart-qty-container")[0];
         
         // Check product type and set quantity
-        /*if(virtual_assistant[0].includes(product_name) || virtual_assistant[1].includes(product_name)) { 
+        // if(virtual_assistant[0].includes(product_name) || virtual_assistant[1].includes(product_name)) { 
+        //   product.classList.add("cai");
+        //   cai_pack_count += quantity;
+        // }
+           if(cai_packages[0].includes(product_name) || cai_packages[1].includes(product_name)) { 
           product.classList.add("cai");
           cai_pack_count += quantity;
-        }*/
+        }
         if(bookkeeping[0].includes(product_name) || bookkeeping[1].includes(product_name)) { 
           product.classList.add("bk");
           bk_count+=quantity; 
@@ -66,37 +103,33 @@
             price.classList.add("qrt"); 
         }
       }
-      
-      const has_multiple_recurring = bk_count > 1 || brand_count > 1 || cai_pack_count > 1 || bk_setup_count > 1;
-      let warning_message = "";
-      const warning_container = document.getElementById("warning-container");
-      if(warning_container) {
-        warning_container.parentElement.remove();
-        view_cart_btn.classList.remove("hide");
-      }
+
+			const has_multiple_recurring = bk_count > 1 || brand_count > 1 || cai_pack_count > 1 || bk_setup_count > 1;
+			console.log(has_multiple_recurring);
       
       // Show warning message and hide check out button in case of invalid product combination or quantity
       if(has_multiple_recurring) {
+				drawer.classList.remove("warn-caution");
+				drawer.classList.add("warn");
+				drawer.classList.add("warn-invalid");
         view_cart_btn.classList.add("hide");
-        warning_message.concat("<p>You can only purchase one recurring package</p>");
     	}
-			if(has_monthly && has_quarterly) {
-        warning_message.concat("<p>You have a monthly and quarterly packages in your cart.</p>");
+			else if(has_monthly && has_quarterly) {
+				drawer.classList.remove("warn-invalid");
+				drawer.classList.add("warn");
+				drawer.classList.add("warn-caution");
+        view_cart_btn.classList.remove("hide");
 			}
-
-      if(warning_message != "") {
-        const warning_container_html = "<div id='warning-container'>" + warning_message + "</div>";
-        let div = document.createElement("div");
-        div.innerHTML = warning_container_html.trim();
-        drawer.appendChild(div);
-      }
-
+			else {
+				drawer.classList.remove("warn");
+				drawer.classList.remove("warn-invalid");
+				drawer.classList.remove("warn-caution");
+        view_cart_btn.classList.remove("hide");
+			}
       
       let quantity_btns = document.getElementsByClassName("action-icon");
       for (const btn of Array.from(quantity_btns)) {
-          btn.addEventListener("click", function() {
-						checkQuantity();
-					});
+          btn.addEventListener("click", checkQuantity);
       }
       
       let delete_btns = document.getElementsByClassName("delete-item-container");
@@ -145,7 +178,6 @@
     });
   
     node_observer.observe(drawer, { subtree: false, childList: true });
-  
   </script>
   
   <style>
