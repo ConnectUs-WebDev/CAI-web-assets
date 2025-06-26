@@ -109,8 +109,8 @@ function markProducts1(count, error_element_class) {
         product.classList.remove("err");
     }
     
-    if(prod_types.length>0) {
     
+    if(prod_types.length>0) {
         for(const type of prod_types) {
             let cart = document.getElementsByClassName(type);
 
