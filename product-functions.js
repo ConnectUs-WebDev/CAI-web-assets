@@ -96,25 +96,28 @@ function checkQuantity(classes) {
 }
 
 // add Exclamation mark for products with error
-function markProducts1(count, item_class) {
+function markProducts1(count, error_element_class) {
     let prod_types = [];
     if(count["bk"]>1) { prod_types.push("bk") }
     if(count["brand"]>1) { prod_types.push("brand") }
     if(count["cai"]>1) { prod_types.push("cai") }
     if(count["bk_setup"]>1) { prod_types.push("bk-setup") }
     
-    let cart = document.getElementsByClassName(item_class);
+    let cart = document.getElementsByClassName("err");
+
+    for(const product of cart) {
+        product.classList.remove("err");
+    }
     
     if(prod_types.length>0) {
-        for(const product of cart) {
-            product.classList.remove("err");
-        }
     
         for(const type of prod_types) {
             let cart = document.getElementsByClassName(type);
 
             for(const product of cart) {
-                product.classList.add("err");
+                const error_class_check = product.getElementsByClassName(error_element_class)[0];
+                const error_element = error_class_check ? error_class_check : product;
+                error_element.classList.add("err");
             }
         }
     }
