@@ -44,22 +44,48 @@ How to use:
   });
 */
 function waitForElem(selector) {
-    return new Promise(resolve => {
-        if (document.querySelector(selector)) {
-            return resolve(document.querySelector(selector));
-        }
+  return new Promise(resolve => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
 
-        const observer = new MutationObserver(mutations => {
-            if (document.querySelector(selector)) {
-                observer.disconnect();
-                resolve(document.querySelector(selector));
-            }
-        });
-
-        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
+    const observer = new MutationObserver(mutations => {
+      if (document.querySelector(selector)) {
+        observer.disconnect();
+        resolve(document.querySelector(selector));
+      }
     });
+
+    // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  });
+}
+
+// Changes an element's background opacity based on scroll depth
+/* Parameters:
+selector => string
+bg_rgb => string (ex. "255, 255, 255")
+max_scroll_depth => int
+max_opacity => int (0-1)
+*/
+function bgOpacityOnScrollDepth(selector, bg_rgb, max_scroll_depth, max_opacity=1){
+  window.addEventListener('scroll', function() {
+    const scroll_pos = window.scrollY;
+    const elem = document.querySelector(selector);
+    const calc_var = max_scroll_depth/max_opacity;
+    const bg = "background-color: rgba(" + bg_rgb;
+    let opacity = 0;
+
+    if(scroll_pos <= max_scroll_depth) {
+      opacity = scroll_pos / calc_var;
+    }
+    else {
+      opacity = max_scroll_depth / calc_var;
+    }
+    
+    elem.setAttribute("style", bg + opacity + ")");
+  });
 }
