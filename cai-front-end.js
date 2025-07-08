@@ -97,7 +97,7 @@ function getProductDetails() {
   const name = document.getElementsByClassName("hl-product-detail-product-name")[0].title;
   const price = document.getElementsByClassName("hl-product-detail-product-price")[0].innerHTML;
   let sub_desc = document.getElementsByClassName("ec-subscription-description")[0];
-  sub_desc = sub_desc ? sub_desc.innerHTML : null;
+  sub_desc = sub_desc ? sub_desc.innerHTML : null; // in case of non-subscription product
   const variants_container = document.getElementsByClassName("variants-container");
   let variants = [];
 
@@ -105,6 +105,7 @@ function getProductDetails() {
     const variant_header = variant.getElementsByClassName("variant-heading")[0].innerHTML;
     const variant_dropdown = variant.getElementsByClassName("variant-dropdown")[0];
     variant_dropdown.className = '';
+
     for(const option of variant_dropdown.children) {
       option.className = '';
     }
@@ -119,13 +120,13 @@ function getProductDetails() {
   const add_to_cart_btn = document.getElementById("add-to-cart-btn");
   const buy_now_btn = document.getElementById("buy-now-btn");
   let description = document.getElementById("description");
-  description = description ? description.innerHTML : null;
+  description = description ? description.innerHTML : null; // in case of empty description
 
   const img_list_container = document.getElementsByClassName("image-list")[0].getElementsByTagName("img");
   let img_list = [];
 
   for(const img of img_list_container) {
-    img_list = img_list.concat(img.src);
+    img_list.push(img.src.substring(61));
   }
 
   const product_details = {
