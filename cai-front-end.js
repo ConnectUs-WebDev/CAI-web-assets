@@ -89,3 +89,56 @@ function bgOpacityOnScrollDepth(selector, bg_rgb, max_scroll_depth, max_opacity=
     elem.setAttribute("style", bg + opacity + ")");
   });
 }
+
+// Gets all product details and returns them in an object. 
+// Can only be used in the Product Details page
+// Return type: obj
+function getProductDetails() {
+  const name = document.getElementsByClassName("hl-product-detail-product-name")[0].title;
+  const price = document.getElementsByClassName("hl-product-detail-product-price")[0].innerHTML;
+  let sub_desc = document.getElementsByClassName("ec-subscription-description")[0];
+  sub_desc = sub_desc ? sub_desc.innerHTML : null;
+  const variants_container = document.getElementsByClassName("variants-container");
+  let variants = [];
+
+  for(const variant of variants_container) {
+    const variant_header = variant.getElementsByClassName("variant-heading")[0].innerHTML;
+    const variant_dropdown = variant.getElementsByClassName("variant-dropdown")[0];
+    variant_dropdown.className = '';
+    for(const option of variant_dropdown.children) {
+      option.className = '';
+    }
+
+    variants.push({
+      header: variant_header, // string
+      dropdown: variant_dropdown // HTML Element
+    })
+  }
+
+  const quantity_input = document.getElementsByClassName("hl-quantity-input")[0];
+  const add_to_cart_btn = document.getElementById("add-to-cart-btn");
+  const buy_now_btn = document.getElementById("buy-now-btn");
+  let description = document.getElementById("description");
+  description = description ? description.innerHTML : null;
+
+  const img_list_container = document.getElementsByClassName("image-list")[0].getElementsByTagName("img");
+  let img_list = [];
+
+  for(const img of img_list_container) {
+    img_list = img_list.concat(img.src);
+  }
+
+  const product_details = {
+    name: name, // string
+    price: price, // string
+    subscription_description: sub_desc, // string
+    variants: variants, // array => object => string(header), HTMLElement(dropdown)
+    quantity_input: quantity_input, // HTML Element
+    add_to_cart_btn: add_to_cart_btn, // HTML Element
+    buy_now_btn: buy_now_btn, // HTML Element
+    description: description, // string
+    img_list: img_list // array => string
+  }
+
+  return product_details;
+}
