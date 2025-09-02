@@ -130,13 +130,11 @@ function checkQuantity(classes) {
             product_name = product_name.title;
         }
 
-        //quantity = parseInt(quantity);
+        product.classList.remove("cai");
+        product.classList.remove("bk");
+        product.classList.remove("bk-setup");
         
         // Check product type and set quantity
-        // if(virtual_assistant[0].includes(product_name) || virtual_assistant[1].includes(product_name)) { 
-        //   product.classList.add("cai");
-        //   cai_pack_count += quantity;
-        // }
         if(cai_packages[0].includes(product_name) || cai_packages[1].includes(product_name)) { 
             product.classList.add("cai");
             cai_pack_count += quantity;
