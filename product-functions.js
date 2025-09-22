@@ -38,6 +38,8 @@ function checkQuantity(classes) {
         product.classList.remove("cai");
         product.classList.remove("bk");
         product.classList.remove("bk-setup");
+        product.classList.remove("mnth");
+        product.classList.remove("qrt");
         
         if(cai_packages[0].includes(product_name) || cai_packages[1].includes(product_name)) { 
             product.classList.add("cai");
@@ -87,13 +89,13 @@ function checkQuantity(classes) {
         result = "valid";
     }
 
-    markProducts1(count, classes["error_element"]);
+    markProducts(count, classes["error_element"]);
 
     return result;
 }
 
 // add Exclamation mark for products with error
-function markProducts1(count, error_element_class) {
+function markProducts(count, error_element_class) {
     let prod_types = [];
     if(count["bk"]>1) { prod_types.push("bk") }
     if(count["brand"]>1) { prod_types.push("brand") }
