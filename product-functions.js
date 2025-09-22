@@ -38,8 +38,8 @@ function checkQuantity(classes) {
         product.classList.remove("cai");
         product.classList.remove("bk");
         product.classList.remove("bk-setup");
-        product.classList.remove("mnth");
-        product.classList.remove("qrt");
+        price.classList.remove("mnth");
+        price.classList.remove("qrt");
         
         if(cai_packages[0].includes(product_name) || cai_packages[1].includes(product_name)) { 
             product.classList.add("cai");
