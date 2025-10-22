@@ -41,10 +41,10 @@ function checkQuantity(classes) {
         price.classList.remove("mnth");
         price.classList.remove("qrt");
         
-        if(cai_packages[0].includes(product_name) || cai_packages[1].includes(product_name)) { 
+        /*if(cai_packages[0].includes(product_name) || cai_packages[1].includes(product_name)) { 
             product.classList.add("cai");
             cai_pack_count += quantity;
-        }
+        }*/
         if(bookkeeping[0].includes(product_name) || bookkeeping[1].includes(product_name)) { 
             product.classList.add("bk");
             bk_count+=quantity; 
